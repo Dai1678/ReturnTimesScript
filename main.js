@@ -1,9 +1,9 @@
 function doPost(e){
-  var latitude = e.parameters["latitude"][0];
-  var longitude = e.parameters["longitude"][0];
+  var originLatitude = e.parameters["latitude"][0];
+  var originLongitude = e.parameters["longitude"][0];
   
-  var originPos = latitude + "," + longitude;
-  var destinationPos = 35.681167 + "," + 139.767052;  //DEBUG 東京駅
+  var originPos = originLatitude + "," + originLongitude;
+  var destinationPos = destinationLatitude + "," + destinationLongitude;
   
   var url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric" + 
             "&language=" + "ja" +
